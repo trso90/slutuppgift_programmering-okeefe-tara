@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="icons/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+	<body>
+		<header>
+			<label class="switch">
+				<input id="darkMode" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+
+			<a href="index.html"><img id="logo" src="img/header3.png" alt="Logotyp för portfoliosida" title="Tara O'Keefe"></a>
+		</header>
+	
+		<div id="wrapper">			
+			<nav>
+				<div id="navleft"></div>
+			
+				<div id="navcenter">
+					<a href="index.html">Hem</a>
+					<a href="index.html#port">Portfolio</a>
+					<a href="index.html#edu">Utbildning</a>
+					<a href="index.html#contact">Kontakt</a>
+					<a href="https://linkedin.com/in/taraokeefe" target="_blank">LinkedIn</a>
+				</div>
+				
+				<div id="navright"></div>
+			</nav>
+        
+        <main>
+			<section id="Port"> 
+				<h2>Portfolio</h2>
+				<div class="port">
+					<a href="index.html"> <img class="thesis" src="icons/port/openfolder_flyux.svg" alt="Icon with closed folder" title="Icon with close folder"></a>
+					<a href="netspons.html"> <img class="port" src="icons/port/closedfolder_netspons.svg" alt="Link to Netspons portfolio" title="Click to open Netspons Portfolio"></a>
+				</div>
+
+				<h3>Fly UX</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+<!--BILDGALLERI-->				
+				<div>
+					<h3 style="text-align:center">Fly UX bildgalleri</h3>
+						<div class="container">
+							<div class="mySlides">
+								<div class="numbertext">1 / 13</div>
+								<img src="img/flyux/1problem.jpg" style="width:100%" alt="Problem statment">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 13</div>
+								<img src="img/flyux/2bench.jpg" style="width:100%" alt="Competitive Benchmark">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 13</div>
+								<img src="img/flyux/3survey.jpg" style="width:100%" alt="Online survey">
+							</div>
+							
+							<div class="mySlides">
+								<div class="numbertext">4 / 13</div>
+								<img src="img/flyux/4note.jpg" style="width:100%" alt="Note taking">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 13</div>
+								<img src="img/flyux/5test.jpg" style="width:100%" alt="Usability test">
+							</div>
+							
+							<div class="mySlides">
+								<div class="numbertext">6 / 13</div>
+								<img src="img/flyux/6affinity.jpg" style="width:100%" alt="Affinity Diagram">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">7 / 13</div>
+								<img src="img/flyux/7journey.jpg" style="width:100%" alt="Customer journey map">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8 / 13</div>
+								<img src="img/flyux/8flow.jpg" style="width:100%" alt="Flow diagram">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">9 / 13</div>
+								<img src="img/flyux/9interaction.jpg" style="width:100%" alt="Interaction design">
+							</div>
+							
+							<div class="mySlides">
+								<div class="numbertext">10 / 13</div>
+								<img src="img/flyux/10medfid.jpg" style="width:100%" alt="Medium fidelity prototype">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">11 / 13</div>
+								<img src="img/flyux/11test2.jpg" style="width:100%" alt="Usability test prototype">
+							</div>
+							
+							<div class="mySlides">
+								<div class="numbertext">12 / 13</div>
+								<img src="img/flyux/12wire.jpg" style="width:100%" alt="Wirefarmes">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">13 / 13</div>
+								<img src="img/flyux/13hifid.jpg" style="width:100%" alt="High fidelity prototype">
+							</div>
+							
+							  <a class="prev" onclick="plusSlides(-1)">❮</a>
+							  <a class="next" onclick="plusSlides(1)">❯</a>
+
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<div class="row">
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/1problem.jpg" style="width:100%" onclick="currentSlide(1)" alt="Problem statment">
+								</div>
+								
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/2bench.jpg" style="width:100%" onclick="currentSlide(2)" alt="Competitive Benchmark">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/3survey.jpg" style="width:100%" onclick="currentSlide(3)" alt="Online survey">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/4note.jpg" style="width:100%" onclick="currentSlide(4)" alt="Note taking">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/5test.jpg" style="width:100%" onclick="currentSlide(5)" alt="Usability test">
+								</div>    
+								
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/6affinity.jpg" style="width:100%" onclick="currentSlide(6)" alt="Affinity Diagram">
+								</div>							
+								
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/7journey.jpg" style="width:100%" onclick="currentSlide(7)" alt="Customer journey map">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/8flow.jpg" style="width:100%" onclick="currentSlide(8)" alt="Flow diagram">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/9interaction.jpg" style="width:100%" onclick="currentSlide(9)" alt="Interaction design">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/10medfid.jpg" style="width:100%" onclick="currentSlide(10)" alt="Medium fidelity prototype">
+								</div>
+							
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/11test2.jpg" style="width:100%" onclick="currentSlide(11)" alt="Usability test prototype">
+								</div>    
+								
+								<div class="column">
+									<img class="demo cursor" src="img/flyux/12wire.jpg" style="width:100%" onclick="currentSlide(12)" alt="Wirefarmes">
+								</div>							
+							
+								<div class="column">
+								<img class="demo cursor" src="img/flyux/13hifid.jpg" style="width:100%" onclick="currentSlide(13)" alt="High fidelity prototype">
+								</div>							
+							</div>
+						</div>
+				</div>
+			</section>         
+<!--KONATKTFORMULÄR-->			
+			<section class="dark" id="contact"> 
+				<div class="container">
+					<form action="#">
+						<h2>Kontaktformulär</h2>
+					
+						<label for="fname">Ditt namn (obligatorisk)</label>
+						<input type="text" id="fname" name="firstname" placeholder="Ange ditt namn...">
+
+						<label for="e-mail">Din e-mail (obligatorisk)</label>
+						<input type="text" id="e-mail" name="e-mail" placeholder="Ange din e-mailadress...">
+
+						<label for="subject">Ditt meddelande</label>
+						<textarea id="subject" name="subject" placeholder="Skriv ditt meddelande ..." style="height:100px"></textarea>
+
+						<input type="submit" value="Skicka meddelande">
+					</form>
+				</div>
+			</section>		
+		</main>
+       
+        <footer>
+			<a href="https://linkedin.com/in/taraokeefe" target="_blank"> <img src="icons/linkedin.svg" alt="LinkedIn Logo" title="Click to open Taras LinkedIn profile"></a>
+			<p class="center">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+				Cupidatat non proident
+			</p>		
+		</footer>
+      </div>
+		<script src="js/script.js"></script>
+  </body>
+</html>

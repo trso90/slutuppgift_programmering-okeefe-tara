@@ -1,0 +1,372 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #8C4357;
+}
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #8C4357;
+}
+
+#wrapper section {
+  background-color:  #8C4357;
+  color:  #FFFFFF;  
+}
+
+#wrapper.classLightMode section,
+#wrapper.classLightMode header {
+  background-color: #FFFFFF; 
+  color:  #8C4357; 
+}
+
+#wrapper.classLightMode nav a{
+  color: #8C4357;
+}
+#wrapper.classLightMode nav a:hover{
+  color: #C196A0;
+}
+
+header{
+  background-color: #C196A0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 10px 0;
+}
+
+#logo{
+  width: 300px;
+}
+
+#navSwitch{
+  display: flex;
+}
+
+nav {
+	overflow: hidden;
+	display: flex;
+	position: sticky;
+	top: 0px;
+	z-index: 3;
+	background-color: #C196A0;
+	border-bottom: 1px solid #8C4357;
+}
+
+#navcenter {
+	display: flex;
+}
+
+#navleft, #navright{
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#navright {
+	text-align: right;
+	align-content: center;
+}
+
+nav a{
+	font-size: 18px;
+	text-decoration: none;
+	color: #8C4357;
+	padding: 6px;
+}
+
+nav a:hover{
+  color: #5B4142;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  margin: 10px;
+  font-size: 18px;
+  
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8C4357;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: url(../icons/darklight/moon.svg); /*🌙*/
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #8C4357;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  content: url(../icons/darklight/sun.svg);; /*☀️*/
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+section{
+ display: flex;  
+ flex-direction: column;
+ align-items: center;
+ background-color: rgba(0,0,0,0.6);
+ padding: 10px 50px 10px 50px;
+ text-align: center;
+ scroll-margin-top: 150px;
+}
+
+section.dark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,0.9);
+}
+
+h1{
+  margin: 80px 0px;
+}
+
+p {
+	width: 80%;
+	text-align: justify;
+}
+
+p.center {
+	text-align: center;
+}
+
+.button {
+	background-color: #FFFFFF;
+	padding: 12px 20px;
+	border: 1px solid #C196A0;
+	border-radius: 4px;
+	-webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 15%); /*drop15%*/
+	font-size: 16px; /* Increase font size */
+	color: #C196A0;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #8C4357;
+	color: #C196A0;
+	border: 1px solid #C196A0;
+	-webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;	
+}
+
+.button:focus {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+/*Styling contactform*/
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #C196A0; /* color border */
+	border-radius: 2px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	background-color: #C196A0;	
+	box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 5%);/*drop5%*/
+}
+
+/*Styling av placeholdertexten i formulärfältet*/
+::placeholder {
+	color: #8C4357;
+	font-size: 12px;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type=submit] {
+	background-color: #FFFFFF;
+	padding: 12px 20px;
+	border: 1px solid #C196A0;
+	border-radius: 4px;
+	-webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 15%); /*drop15%*/
+	font-size: 16px; /* Increase font size */
+	color: #8C4357;
+}
+
+input[type=submit]:hover {
+	background-color: #8C4357;
+	color: #C196A0;
+	border: 1px solid #C196A0;
+	-webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;	
+}
+
+input[type=text]:focus {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+textarea:focus {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+footer {
+	display: flex;
+	background-color: #8C4357;
+	color: #FFFFFF;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 0 75px 0;
+}
+
+/*BILDGALLERI*/
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width: 1000px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #8C4357;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #8C4357;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+#caption {
+	text-align: center;
+	width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="icons/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+	<body>
+		<header>
+			<label class="switch">
+				<input id="darkMode" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+
+			<a href="index.html"><img id="logo" src="img/header3.png" alt="Logotyp för portfoliosida" title="Tara O'Keefe"></a>
+		</header>
+		
+		<div id="wrapper">			
+			<nav>
+				<div id="navleft"></div>
+			
+				<div id="navcenter">
+					<a href="#">Hem</a>
+					<a href="#port">Portfolio</a>
+					<a href="#edu">Utbildning</a>
+					<a href="#contact">Kontakt</a>
+					<a href="https://linkedin.com/in/taraokeefe" target="_blank">LinkedIn</a>
+				</div>
+				
+				<div id="navright"></div>
+			</nav>
+        
+			<main>
+				<section id="port"> 
+					<h2>Portfolio</h2>
+					<div class="port">				
+						<a href="flyux.html"> <img class="port" src="icons/port/closedfolder_flyux.svg" alt="Link to Fly UX portfolio" title="Click to open Fly UX Portfolio"></a>
+						<a href="netspons.html"> <img class="port" src="icons/port/closedfolder_netspons.svg" alt="Link to Netspons portfolio" title="Click to open Netspons Portfolio"></a>
+					</div>
+					
+					<h3>Placeholder</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</section>  
+			
+				<section id="edu"> 
+					<h2>Utbildning</h2>	
+					<div class="edu">
+					
+						<img class="edu" src="icons/edu/nackademin.svg" alt="UX-Designer" title="UX-Designer">
+						<img class="edu" src="icons/edu/uxdiui.svg" alt="Professional Certificate in Visual Design" title="Professional Certificate in Visual Design">
+						<img class="edu" src="icons/edu/uxdiux.svg" alt="Professional Diploma in UX Design" title="Professional Diploma in UX Design">
+						<img class="edu" src="icons/edu/bschealth.svg" alt="Kandidatexamen i hälsopromotion" title="Kandidatexamen i hälsopromotion">
+						<img class="edu" src="icons/edu/bscpsy.svg" alt="Kandidatexamen i psykologi" title="Kandidatexamen i psykologi">					
+					</div>
+					
+					<h3>Placeholder</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</section>
+			
+<!--KONTAKTFORMULÄR-->			
+				<section class="dark" id="contact"> 
+					<div class="container">
+						<form action="#">
+						<h2>Kontaktformulär</h2>
+						
+							<label for="fname">Ditt namn (obligatorisk)</label>
+							<input type="text" id="fname" name="firstname" placeholder="Ange ditt namn...">
+
+							<label for="e-mail">Din e-mail (obligatorisk)</label>
+							<input type="text" id="e-mail" name="e-mail" placeholder="Ange din e-mailadress...">
+
+							<label for="subject">Ditt meddelande</label>
+							<textarea id="subject" name="subject" placeholder="Skriv ditt meddelande ..." style="height:100px"></textarea>
+
+							<input type="submit" value="Skicka meddelande">
+					  </form>
+					</div>
+				</section>		
+			</main>
+		   
+			<footer>
+				<a href="https://linkedin.com/in/taraokeefe" target="_blank"> <img src="icons/linkedin.svg" alt="LinkedIn Logo" title="Click to open Taras LinkedIn profile"></a>
+				<p class="center">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+					Cupidatat non proident
+				</p>		
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

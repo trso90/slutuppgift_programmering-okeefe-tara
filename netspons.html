@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="icons/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+	<body>
+		<header>
+			<label class="switch">
+				<input id="darkMode" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+
+			<a href="index.html"><img id="logo" src="img/header3.png" alt="Logotyp för portfoliosida" title="Tara O'Keefe"></a>
+		</header>
+		
+		<div id="wrapper">			
+			<nav>
+				<div id="navleft"></div>
+			
+				<div id="navcenter">
+					<a href="index.html">Hem</a>
+					<a href="index.html#port">Portfolio</a>
+					<a href="index.html#edu">Utbildning</a>
+					<a href="index.html#contact">Kontakt</a>
+					<a href="https://linkedin.com/in/taraokeefe" target="_blank">LinkedIn</a>
+				</div>
+				
+				<div id="navright"></div>
+			</nav>
+			        
+			<main>
+				<section id="Port">
+					<h2>Portfolio</h2>
+					<div class="port">
+						<a href="flyux.html"> <img class="thesis" src="icons/port/closedfolder_flyux.svg" alt="Icon with closed folder" title="Icon with close folder"></a>
+						<a href="index.html"> <img class="port" src="icons/port/openfolder_netspons.svg" alt="Link to Netspons portfolio" title="Click to open Netspons Portfolio"></a>					
+					</div>
+
+					<h3>Netspons</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+<!--BILDGALLERI-->		
+					<div>
+						<h2 style="text-align:center">Netspons bildgalleri</h2>
+							<div class="container">
+								<div class="mySlides">
+									<div class="numbertext">1 / 9</div>
+									<img src="img/netspons/1.rapport.jpg" style="width:100%" alt="UX Rapport">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">2 / 9</div>
+									<img src="img/netspons/2.sam.jpg" style="width:100%" alt="Sammanfattning">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">3 / 9</div>
+									<img src="img/netspons/3.bak.jpg" style="width:100%" alt="Bakgrund">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">4 / 9</div>
+									<img src="img/netspons/4.tid.jpg" style="width:100%" alt="Tidslinje">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">5 / 9</div>
+									<img src="img/netspons/5.mål.jpg" style="width:100%" alt="Målgrupp och urval">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">6 / 9</div>
+									<img src="img/netspons/6.resa.jpg" style="width:100%" alt="Användarresa">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">7 / 9</div>
+									<img src="img/netspons/7.behov.jpg" style="width:100%" alt="Behovsområden">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">8 / 9</div>
+									<img src="img/netspons/8.intryck.jpg" style="width:100%" alt="Sammanställning av intryck">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">9 / 9</div>
+									<img src="img/netspons/9.förbättra.jpg" style="width:100%" alt="Förbättringsidéer">
+								</div>
+								
+								<a class="prev" onclick="plusSlides(-1)">❮</a>
+								<a class="next" onclick="plusSlides(1)">❯</a>
+
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+
+								<div class="row">
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/1.rapport.jpg" style="width:100%" onclick="currentSlide(1)" alt="UX Rapport">
+									</div>
+
+									<div class="column">
+										<img class="demo cur	sor" src="img/netspons/2.sam.jpg" style="width:100%" onclick="currentSlide(2)" alt="Sammanfattning">
+									</div>
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/3.bak.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bakgrund">
+									</div>
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/4.tid.jpg" style="width:100%" onclick="currentSlide(4)" alt="Tidslinje">
+									</div>
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/5.mål.jpg" style="width:100%" onclick="currentSlide(5)" alt="Målgrupp och urval">
+									</div>    
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/6.resa.jpg" style="width:100%" onclick="currentSlide(6)" alt="Användarresa">
+									</div>
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/7.behov.jpg" style="width:100%" onclick="currentSlide(7)" alt="Behovsområden">
+									</div>
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/8.intryck.jpg" style="width:100%" onclick="currentSlide(8)" alt="Sammanställning av intryck">
+									</div>
+									
+									<div class="column">
+										<img class="demo cursor" src="img/netspons/9.förbättra.jpg" style="width:100%" onclick="currentSlide(9)" alt="Förbättringsidéer">
+									</div>
+								</div>
+							</div>
+					</div>
+				</section>  			
+<!--KONTAKTFORMULÄR-->			
+				<section class="dark" id="contact">
+					<div class="container">
+						<form action="#">
+							<h2>Kontaktformulär</h2>
+						
+							<label for="fname">Ditt namn (obligatorisk)</label>
+							<input type="text" id="fname" name="firstname" placeholder="Ange ditt namn...">
+
+							<label for="e-mail">Din e-mail (obligatorisk)</label>
+							<input type="text" id="e-mail" name="e-mail" placeholder="Ange din e-mailadress...">
+
+							<label for="subject">Ditt meddelande</label>
+							<textarea id="subject" name="subject" placeholder="Skriv ditt meddelande ..." style="height:100px"></textarea>
+
+							<input type="submit" value="Skicka meddelande">
+						</form>
+					</div>
+				</section>		
+			</main>
+		   
+			<footer>
+				<a href="https://linkedin.com/in/taraokeefe" target="_blank"> <img src="icons/linkedin.svg" alt="LinkedIn Logo" title="Click to open Taras LinkedIn profile"></a>
+				<p class="center">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+					Cupidatat non proident
+				</p>		
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
